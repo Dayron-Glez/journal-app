@@ -1,0 +1,74 @@
+.journal__main-content{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.journal__sidebar{
+    background-color: $dark-grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 450px;
+}
+
+.journal__sidebar-navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.journal__sidebar-navbar h3 {
+    font-weight: lighter;
+}
+
+.journal__new-entry{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    transition: color .3s ease;
+   &:hover{
+    color: darken($color: white, $amount: 20);
+   }
+}
+
+.journal__entries{
+    flex: 1 1 auto;
+    margin-top: 30px;
+    overflow-y: scroll;
+}
+
+.journal__entry{
+    background-color: white;
+    border-radius: 4px;
+    color: $dark-grey;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.journal__entry-picture{
+    height: 75px;
+    width: 75px;
+    background-image: url(/src/assets/table-lamp-ga6b09e0c7_1280.jpg);
+    background-size: cover;
+}
+
+.journal__entry-body{
+    padding: 10px;
+}
+.journal__entry-title{
+    font-size: 14px;
+    font-weight: bold;
+}
+.journal__entry-content{
+    font-size: 10px;
+}
